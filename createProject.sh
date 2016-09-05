@@ -1,3 +1,6 @@
+# First created on March 17, 2014
+# Author: Michael Warren
+# This file creates C++ projects
 clear
 version="0.0.2"
 echo "Project creator"
@@ -21,16 +24,20 @@ echo "You entered: $directoryName"
 directoryExists=false
 # attempt to find directory
 find "$directoryName"
-if [ $? -eq 0]
+if [ $? -eq 0 ]
 then
 	directoryExists=true
 else
 	# create directory if it does not exist
 	mkdir -p "$directoryName"
-	if [ $? -eq 0 ]; then directoryExists=true
+	if [ $? -eq 0 ]
+	then
+		directoryExists=true
+	fi
 fi
 # if directory exists 
-if [ $directoryExists ]
+if  $directoryExists
+then
 	# call executable in /home/miwarren/CPPFileCreator to create a main.cpp file to put in the folder
 	$HOME/CPPFileCreator/a.out "$directoryName"
 	# copy a run.sh file into the folder, too...
