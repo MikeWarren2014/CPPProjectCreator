@@ -16,6 +16,7 @@ Once complete, the script copies a script to call the file creator to the projec
 ### Creating files
 To create files for your project, go to the project directory and type `sh fileCreator.sh`. You should see the following menu: 
 ![File creator menu](/image.png).
+
 Simply enter the numbers corresponding to the things you wish to create and the appropriate files will be generated.
 1. This option generates a .cpp file and a .h file for the class name you specify, complete with the include guards.
 2. This option generates a .h file for the enum, which also has include guards
