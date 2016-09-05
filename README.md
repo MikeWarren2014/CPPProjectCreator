@@ -8,6 +8,7 @@ The main script is called `createProject.sh`, and can be called from anywhere wi
   * otherFolder
     * Project1
   * CPPFileCreator
+
 and you, from `Home/otherFolder` called the script, any directory you specify will be subdirectory of `otherFolder` if you don't use absolute pathname.
 
 The script then creates the directory, and any parent directories, if they don't exist, and calls a program that creates files for the project. *`main.cpp` is created by default.* You may specify any number of classes, enumerations, or main.cpp files you like. 
